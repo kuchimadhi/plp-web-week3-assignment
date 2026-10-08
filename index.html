@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Budget Tracker</h1>
+        <p>Manage your money and track your spending.</p>
+    </header>
+
+    <main>
+
+        <section class="summary">
+            <div class="summary-card">
+                <h3>Total Income</h3>
+                <p class="income">$2,500.00</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Total Expenses</h3>
+                <p class="expense">$850.00</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Balance</h3>
+                <p class="balance">$1,650.00</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Add Transaction</h2>
+
+            <form>
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="e.g. Groceries">
+
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="e.g. 50">
+
+                <label for="type">Transaction Type</label>
+                <select id="type">
+                    <option>Income</option>
+                    <option>Expense</option>
+                </select>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Recent Transactions</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Salary</td>
+                        <td class="income">Income</td>
+                        <td class="income">+$2,500.00</td>
+                        <td>October 8, 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>Groceries</td>
+                        <td class="expense">Expense</td>
+                        <td class="expense">-$150.00</td>
+                        <td>October 7, 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>Transport</td>
+                        <td class="expense">Expense</td>
+                        <td class="expense">-$50.00</td>
+                        <td>October 6, 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Design Notes</h2>
+
+            <p>
+                The Budget Tracker uses a clean and simple design
+                to make financial information easy to understand.
+            </p>
+
+            <ul>
+                <li>Consistent colors are used throughout the page.</li>
+                <li>Clear typography improves readability.</li>
+                <li>Cards organize information into sections.</li>
+                <li>Margins and padding create good spacing.</li>
+                <li>Rounded corners create a modern appearance.</li>
+                <li>The layout is responsive on different screen sizes.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Budget Tracker</p>
+    </footer>
+
+</body>
+</html>
